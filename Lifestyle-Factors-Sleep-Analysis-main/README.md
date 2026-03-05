@@ -71,22 +71,12 @@ Example output:
 Predicted Sleep Quality Score: 7.8
 and provide the recommendations also.
 **How to Run the Project**:
-Step 1
-
-Clone the repository
-
+Step 1-Clone the repository
 git clone https://github.com/your-username/Lifestyle-Factors-Sleep-Analysis.git
-Step 2
-
-Install required libraries
-
+Step 2-Install required libraries
 pip install pandas numpy matplotlib seaborn scikit-learn
-Step 3
-
-Run the project
-
+Step 3-Run the project
 python sleep_quality.py
-
 or open the notebook and run all cells.
 
 **Key Insights**:
