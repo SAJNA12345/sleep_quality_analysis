@@ -1,69 +1,99 @@
-# Lifestyle-Factors-Sleep-Analysis
-Analyzing how lifestyle factors affect sleep quality and duration using a real dataset
+**Project Overview**
 
-## Project Overview
-This project explores how various lifestyle factors affect sleep quality and sleep duration. Using the Sleep Health and Lifestyle Dataset from Kaggle, we analyzed correlations and patterns in:
+This project analyzes how different lifestyle factors influence sleep quality and sleep duration. Using the Sleep Health and Lifestyle Dataset from Kaggle, the project performs data analysis, visualization, and machine learning prediction.
 
-- Sleep duration
-- Sleep quality
-- Stress level
-- Physical activity
-- BMI
-- Sleep disorders
+The goal is to understand relationships between lifestyle habits and sleep health and build a machine learning model that predicts sleep quality based on lifestyle inputs.
 
-The goal is to understand how these factors influence sleep and identify patterns that could help improve sleep health.
+**Objectives**:
+Analyze the relationship between lifestyle factors and sleep patterns.
+Identify key factors affecting sleep quality.
+Build a machine learning model to predict sleep quality.
+Visualize patterns and correlations in the dataset.
+Dataset
 
----
+**Dataset used:**
+Sleep Health and Lifestyle Dataset
 
-## Key Analyses
-1. **Sleep Duration vs Sleep Quality**  
-   Examined whether longer sleep is associated with better sleep quality.
+It contains features such as:
+Age
+Gender
+Occupation
+Sleep Duration
+Physical Activity Level
+Stress Level
+BMI Category
+Heart Rate
+Daily Steps
+Sleep Disorder
+Sleep Quality (Target Variable)
 
-2. **Stress Level vs Sleep Duration**  
-   Investigated how stress affects the number of hours a person sleeps.
+Dataset source:
+https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset
 
-3. **Physical Activity vs Sleep Duration**  
-   Analyzed if higher physical activity levels are related to longer sleep.
+Technologies Used
+Python
+Pandas (data preprocessing)
+NumPy
+Matplotlib
+Seaborn
+Scikit-learn (Machine Learning)
+Jupyter Notebook / VS Code
 
-4. **BMI Category vs Sleep Quality**  
-   Explored how body mass index affects sleep quality.
+**Machine Learning Model**:
+A Random Forest Regressor model is used to predict Sleep Quality based on lifestyle factors.
 
-5. **Sleep Disorder vs Sleep Duration**  
-   Checked if individuals with sleep disorders sleep fewer hours.
+Steps followed:
+Data preprocessing
+Handling categorical variables
+Feature selection
+Train-test split
+Model training
+Prediction of sleep quality
+Key Visualizations
 
----
+The project includes several visual analyses:
+Sleep Duration vs Sleep Quality
+Stress Level vs Sleep Duration
+Physical Activity vs Sleep Duration
+BMI Category vs Sleep Quality
+Sleep Disorder vs Sleep Duration
+These visualizations help understand how lifestyle habits affect sleep.
 
-## Tools Used
-- Python (pandas, matplotlib, seaborn)
-- Google Colab
+Model Prediction-The trained machine learning model can predict sleep quality when given lifestyle inputs such as:
+Sleep duration
+Stress level
+Physical activity
+BMI category
+Daily steps
+Heart rate
 
----
+Example output:
+Predicted Sleep Quality Score: 7.8
+and provide the recommendations also.
+**How to Run the Project**:
+Step 1
 
-## Insights / Findings
-- Longer sleep correlates with better sleep quality.  
-- Higher stress levels are associated with shorter sleep duration.  
-- Individuals with higher physical activity tend to sleep slightly longer.  
-- Certain BMI categories are more likely to report poor sleep quality.  
-- Sleep disorders negatively affect sleep duration.  
-- Overall, lifestyle factors like stress, activity, BMI, and sleep disorders have a significant impact on sleep patterns.
+Clone the repository
 
----
+git clone https://github.com/your-username/Lifestyle-Factors-Sleep-Analysis.git
+Step 2
 
-## Dataset
-[Sleep Health and Lifestyle Dataset - Kaggle](https://www.kaggle.com/datasets/uom190346a/sleep-health-and-lifestyle-dataset)
+Install required libraries
 
----
+pip install pandas numpy matplotlib seaborn scikit-learn
+Step 3
 
-## How to Run
-1. Open the notebook (`.ipynb`) in Google Colab.  
-2. Upload the dataset CSV if prompted.  
-3. Run all cells to reproduce the analyses and visualizations.  
+Run the project
 
----
+python sleep_quality.py
 
-## Optional Enhancements
-- Add more analyses, such as daily steps vs sleep quality.  
-- Visualize trends using interactive plots.  
-- Include recommendations for improving sleep based on findings.
+or open the notebook and run all cells.
 
+**Key Insights**:
+Higher stress levels are linked to lower sleep duration.
+Individuals with higher physical activity tend to sleep longer.
+BMI category shows a relationship with sleep quality.
 
+Sleep disorders negatively impact sleep duration.
+
+Lifestyle factors significantly influence sleep health.
